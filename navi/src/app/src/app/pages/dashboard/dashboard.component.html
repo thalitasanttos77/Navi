@@ -1,0 +1,73 @@
+<app-header></app-header>
+
+<div
+  class="min-h-screen bg-gradient-to-br from-ocean-light to-ocean-default p-8 text-white"
+>
+  <div class="container mx-auto py-8">
+    <h1 class="text-5xl font-bold mb-6 text-center drop-shadow-lg">
+      Bem-vindo(a) à Navi!
+    </h1>
+    <p class="text-xl text-center mb-12 opacity-90">
+      Sua jornada de desenvolvimento começa aqui, rumo a novos horizontes.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <app-card
+        class="bg-gradient-to-br from-seafoam to-ocean-default hover:from-ocean-default hover:to-seafoam transition-all duration-300 transform hover:scale-105 cursor-pointer"
+      >
+        <h2 class="text-3xl font-semibold mb-4 text-white">Meu PDI</h2>
+        <p class="mb-4 text-white/90">
+          Visualize seu Plano de Desenvolvimento Individual e trace seus
+          objetivos de carreira.
+        </p>
+        <button
+          class="bg-white text-ocean-dark px-6 py-3 rounded-full font-bold hover:bg-ocean-light hover:text-white transition-colors duration-200 shadow-md hover:shadow-lg"
+        >
+          Ver PDI
+        </button>
+      </app-card>
+
+      <app-card
+        class="bg-gradient-to-br from-ocean-dark to-ocean-default hover:from-ocean-default hover:to-ocean-dark transition-all duration-300 transform hover:scale-105 cursor-pointer"
+      >
+        <h2 class="text-3xl font-semibold mb-4 text-white">
+          Habilidades em Foco
+        </h2>
+        <p class="mb-4 text-white/90">
+          Descubra as habilidades mais buscadas e comece a desenvolvê-las.
+        </p>
+        <button
+          class="bg-white text-ocean-dark px-6 py-3 rounded-full font-bold hover:bg-ocean-light hover:text-white transition-colors duration-200 shadow-md hover:shadow-lg"
+        >
+          Explorar Habilidades
+        </button>
+      </app-card>
+
+      <app-card
+        class="bg-gradient-to-br from-ocean-light to-seafoam hover:from-seafoam hover:to-ocean-light transition-all duration-300 transform hover:scale-105 cursor-pointer"
+      >
+        <h2 class="text-3xl font-semibold mb-4 text-white">Plano de Estudos</h2>
+        <p class="mb-4 text-white/90">
+          Crie seu plano de estudos adaptado à sua rotina e materiais
+          preferidos.
+        </p>
+        <button
+          class="bg-white text-ocean-dark px-6 py-3 rounded-full font-bold hover:bg-ocean-light hover:text-white transition-colors duration-200 shadow-md hover:shadow-lg"
+        >
+          Gerar Plano
+        </button>
+      </app-card>
+    </div>
+    <div class="mt-16 text-center">
+      <h2 class="text-4xl font-bold mb-6 drop-shadow-lg">
+        Conquiste Insígnias!
+      </h2>
+      <p class="text-lg opacity-90">
+        À medida que você avança, desbloqueie conquistas e suba de nível na sua
+        jornada.
+      </p>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
