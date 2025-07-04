@@ -1,0 +1,91 @@
+<main
+  class="relative w-full h-screen bg-cover bg-center"
+  style="background-image: url('/images/left - Copia.png')"
+>
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <header class="absolute top-6 left-6 z-20 flex items-center gap-3 text-white">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="h-8 w-8 text-shadow"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"
+      />
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M15 12l-3-7-3 7 3 7 3-7z"
+      />
+    </svg>
+    <span class="text-3xl font-bold text-shadow font-['Merriweather',_serif]"
+      >Navi</span
+    >
+  </header>
+
+  <div class="relative z-10 flex h-full w-full items-center justify-center p-4">
+    <div
+      class="w-full max-w-md bg-[#F5F5DC]/10 backdrop-blur-lg rounded-xl shadow-2xl p-8"
+    >
+      <div class="mb-8 text-center text-white">
+        <h1 class="text-4xl font-['Merriweather',_serif] font-bold text-shadow">
+          Bem-vindo a bordo!
+        </h1>
+        <p class="mt-2 text-lg text-white/90 text-shadow-sm">
+          Navegue um oceano de possibilidades.
+        </p>
+      </div>
+
+      <form
+        class="flex flex-col gap-6"
+        #loginForm="ngForm"
+        (ngSubmit)="login()"
+      >
+        <div>
+          <label
+            for="usuario"
+            class="mb-1 block text-sm font-medium text-white/80"
+            >Usuário</label
+          >
+          <input
+            id="usuario"
+            type="text"
+            placeholder="guilherme.arthur"
+            name="usuario"
+            [(ngModel)]="username"
+            class="w-full rounded-lg border-2 border-transparent bg-white/20 p-3 text-white placeholder:text-gray-300 outline-none transition-all duration-300 focus:border-white/50"
+          />
+        </div>
+
+        <div>
+          <label
+            for="password"
+            class="mb-1 block text-sm font-medium text-white/80"
+            >Senha</label
+          >
+          <input
+            id="password"
+            type="password"
+            placeholder="********"
+            name="password"
+            [(ngModel)]="password"
+            class="w-full rounded-lg border-2 border-transparent bg-white/20 p-3 text-white placeholder:text-gray-300 outline-none transition-all duration-300 focus:border-white/50"
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="mt-4 w-full rounded-lg bg-[#008B8B] py-3 px-4 font-bold text-white transition-transform duration-300 hover:scale-105 hover:bg-[#006A6A]"
+        >
+          Embarcar
+        </button>
+      </form>
+    </div>
+  </div>
+</main>
